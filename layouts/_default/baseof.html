@@ -12,7 +12,8 @@
 <!--
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-  -->
+  ->>
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/06803e5eb8b0d1c8e5f20e4c5/aa2a01bb7477d8c5512239441.js");</script>
   {{ template "_internal/opengraph.html" . }}
   {{- if not (eq .Site.Params.googleAutoAds "") -}}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -22,8 +23,6 @@
             enable_page_level_ads: true
        });
     </script>
-
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/06803e5eb8b0d1c8e5f20e4c5/aa2a01bb7477d8c5512239441.js");</script>
   {{- end -}}
 </head>
 <body>
@@ -31,11 +30,9 @@
     <div style="margin-bottom:1rem">
       <a href="../" style="float: left">Back</a>
       <br/>
-      <a href="{{ .Site.BaseURL }}" class="apps-header-title">
-	<h1>
+	<h2>
         {{ .Site.Title }}
-	</h1>
-      </a>
+	</h2>
     </div>
     {{ with .Site.Menus.main }}
       {{ range $i, $e := sort . }}
